@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Profession</th>
+        </tr>
+        
+            <% data.forEach((item)=>{%>
+                <tr>
+                    <td>
+                        <%=item.name%>
+                    </td>
+                    <td>
+                        <%=item.email%>
+                    </td>
+                    <td>
+                        <%=item.age%>
+                    </td>
+                    <td>
+                        <%=item.city%>
+                    </td>
+                    <td>
+                        <%=item.profession%>
+                    </td>
+                </tr>
+                
+                <%});%>
+        
+    </table>
+
+    <button onclick="/user/add"> Add User</button>
+</body>
+</html>
